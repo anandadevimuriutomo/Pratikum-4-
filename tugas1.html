@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js">
+        //untuk menghubungkan dengan jquery</script>
+        <script type="text/javascript">
+            //untuk memanggil document yang ready:jquery
+            $(document).ready(function(){
+                $(".hide").click(function(){$("#foto").hide("slow")});
+                // menyembunyikan foto 1
+                $(".show").click(function(){$("#foto").show("slow")});
+                // menampilkan foto 1
+                $(".hide2").click(function(){$("#foto2").hide("slow")});
+                // menyembunyikan foto 2
+                $(".show2").click(function(){$("#foto2").show("slow")});
+                // menampilkan foto 2
+            });
+        </script>
+    </head>
+    <body>
+        <button class="hide"> Sembunyikan </button>
+        <button class="show"> Tampilkan </button>
+        <p> <img id="foto" src="bendera.jpeg"> </p>
+
+        <button class="hide2"> Sembunyikan </button>
+        <button class="show2"> Tampilkan </button>
+        <p> <img id="foto2" src="bendera.jpeg"> </p>
+    </body>
+</html>

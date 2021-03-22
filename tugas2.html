@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js">
+        //menghubungkan dengan jquery</script>
+        <script type="text/javascript">
+            //memanggil document yang ready:jquery
+          $(document).ready(function(){
+            // perintah untuk melakukan dobel klik pada div
+            $("div").dblclick(function(){
+                //mengubah div agar mempunyai tampilan  warna background merah setelah di dobel klik
+                $(this).css({background:"red"});
+            });
+        });
+    </script>
+    <style type="text/css">
+        /*membuat css untuk div*/
+        div{
+            background: yellow;
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            }
+    </style>
+</head>
+<body>
+<p> klik 2x pada setiap kotak untuk mengubah warnanya </p>
+<!-- memanggil div -->
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>

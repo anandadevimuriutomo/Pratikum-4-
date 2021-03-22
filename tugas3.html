@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js">
+        //untuk menghubungkan dengan jquery</script>
+        <script type="text/javascript">
+            //memanggil document yang ready:jquery
+            $(document).ready(function(){
+                $("#fadeIn").click(function(){$(".kotak").fadeIn("slow")});
+                // hasilnya untuk menampilkan kotak kuning
+                $("#fadeOut").click(function(){$(".kotak").fadeOut("slow")});
+                //hasilnya untuk menyembunyikan kotak kuning
+                $("#fadeTo").click(function(){$(".kotak").fadeToggle("3000")});
+                //hasilnya untul menampilkan / menyembunyikan kotak kuning dalam 0.3 detik
+                    
+            });
+        </script>
+        <style>
+            .kotak{
+                width: 400px;
+                height: 200px;
+                background-color: yellow;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="kotak"></div>
+        <br>
+        <button id="fadeIn"> Fade In </button>
+        <button id="fadeOut"> Fade Out </button>
+        <button id="fadeTo"> Fade To 0.3 </button>
+    </body>
+</html>
